@@ -1,0 +1,49 @@
+<header style="text-align:center" [style.height.px]="heightw">
+
+    <video autoplay loop id="video-background" muted muted="muted" onloadedmetadata="this.muted = true" plays-inline  [style.min-width.px]="widthw">
+        <source [src]="DomSanitizer.bypassSecurityTrustUrl(videoHeader)" type="video/mp4">
+    </video>
+
+    <div id="headerContainer" #headerContainer [style.top.px]="logosTop">
+        <div class="logo ">
+            <div class="container">
+                <img [src]="DomSanitizer.bypassSecurityTrustUrl(logo)" class="img-responsive wow fadeInDown">
+            </div>
+        </div>
+        
+        <div class= "applogos">
+            <div class="container">
+                <button class="wow  fadeInLeft">
+                    <img [src]="DomSanitizer.bypassSecurityTrustUrl(logoPlayG)" class="wow  fadeInLeft">
+                </button>
+                <button class="wow  fadeInRight">
+                    <img [src]="DomSanitizer.bypassSecurityTrustUrl(logoAppS)" class="wow  fadeInRight">
+                </button>
+            </div>
+        </div>
+
+        <div class= "social">
+            <div class="container">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+    
+</header>
+
+
+<app-news></app-news>
+<app-quienes-somos></app-quienes-somos>
+<app-comentarios></app-comentarios>
+<app-pronto-disponible></app-pronto-disponible>
+<app-twitter></app-twitter>
+<app-faqs></app-faqs>
+<app-instagram></app-instagram>
+<app-intro></app-intro>
+<app-footer></app-footer>
+
+
+        
+        

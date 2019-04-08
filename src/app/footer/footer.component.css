@@ -1,0 +1,21 @@
+footer {
+  background-color: gold;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+footer i {
+  color: black;
+}
+footer p {
+  color: black;
+  text-align: center;
+  padding-top: 1%;
+}
+footer .social {
+  text-align: center;
+  font-size: 30px;
+}
+
+footer .social i {
+    padding: 5%;
+  }

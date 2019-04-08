@@ -1,0 +1,37 @@
+.container{
+    text-align:center;     
+    width: 57%;
+}
+
+section{
+	background: whitesmoke;
+    padding: 50px 0;
+}
+
+span{
+    font-size: 32px;
+    font-family: raleway;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.titulo{
+    margin-bottom: 2%;
+}
+.titulo i{
+    font-size: 40px;
+    color: grey;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+
+
+
+@media (max-width: 680px){
+    span{
+        font-size: 13px;
+    }
+}
+
+

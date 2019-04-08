@@ -1,0 +1,119 @@
+header{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header .container{
+	width: 30%;
+    min-width: 240px;
+}
+
+#video-background {
+  position: absolute;
+  right: 0; 
+  /* bottom: 0; */
+  width: auto; 
+  height: inherit;
+  z-index: -1;
+  min-height: 350px;
+}
+
+#headerContainer{
+  position: relative;
+}
+
+
+.bot {
+    height: 1px;
+    text-align: center;
+}
+
+.bot i {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+
+    bottom: 9000%;
+    position: relative;
+
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 0%;
+    }
+
+    to {
+        margin-top: 3%;
+    }
+}
+
+/* Botones */
+@media (max-width: 320px) {
+    
+    header .container{
+        min-width: 150px;
+    }
+
+    header .container button{
+        min-width: 75px;
+        margin: 2px;
+    }
+}
+
+@media (max-height: 290px) {
+    
+    header .container{
+        min-width: 150px;
+    }
+
+    header .container button{
+        min-width: 80px;
+        margin: 2px;
+    }
+}
+
+@media (max-height: 450px) {
+    
+    header .container{
+        min-width: 170px;
+    }
+
+    header .container button{
+        min-width: 80px;
+        margin: 2px;
+    }
+}
+
+/* Video */
+
+@media (max-height: 350px) {
+    
+    /* Solo de 350px hasta 285px de height */
+    #video-background {
+        bottom: 0;
+    }
+}
+
+
+@media (min-width: 960px) {
+    #video-background {
+        bottom: 0;
+        height: auto;
+    }
+}
+
+/* Ipad pro y algunas tablets */
+@media (max-width: 1024px) and (min-height: 1080px) {
+    #video-background {
+        height: inherit;
+    }
+}
+
+@media (min-width: 1025px) and (min-height: 1080px) {
+    #video-background {
+        height: inherit;
+    }
+}

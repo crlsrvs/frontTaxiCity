@@ -1,0 +1,184 @@
+header{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo .container{
+	width: 30%;
+    min-width: 240px;
+}
+
+.applogos .container{
+	width: 50%;
+    min-width: 240px;
+    display: inline;
+}
+
+#video-background {
+  position: absolute;
+  right: 0; 
+  /* bottom: 0; */
+  width: auto; 
+  height: inherit;
+  z-index: -1;
+  min-height: 350px;
+}
+
+#headerContainer{
+  position: relative;
+}
+
+
+.bot {
+    height: 1px;
+    text-align: center;
+}
+
+.bot i {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+
+    bottom: 9000%;
+    position: relative;
+
+    /* animation-duration: 2s; */
+    animation-iteration-count: infinite;
+}
+
+
+
+/* Botones */
+    @media (max-width: 320px) {
+        
+        header .container{
+            min-width: 150px;
+        }
+
+        header .container button{
+            min-width: 75px;
+            margin: 2px;
+        }
+    }
+
+    @media (max-height: 290px) {
+        
+        header .container{
+            min-width: 150px;
+        }
+
+        header .container button{
+            min-width: 80px;
+            margin: 2px;
+        }
+    }
+
+    @media (max-height: 450px) {
+        
+        header .container{
+            min-width: 170px;
+        }
+
+        header .container button{
+            min-width: 80px;
+            margin: 2px;
+        }
+    }
+/*  */
+
+
+/* Video */
+
+    @media (max-height: 350px) {
+        
+        /* Solo de 350px hasta 285px de height */
+        #video-background {
+            bottom: 0;
+        }
+    }
+
+
+    @media (min-width: 960px) {
+        #video-background {
+            bottom: 0;
+            height: auto;
+        }
+    }
+
+    /* Ipad pro y algunas tablets */
+    @media (max-width: 1024px) and (min-height: 1080px) {
+        #video-background {
+            height: inherit;
+        }
+    }
+
+    @media (min-height: 1081px) {
+        #video-background {
+            height: inherit;
+        }
+    }
+
+    @media (min-width: 2841px) {
+        #video-background {
+            height: auto;
+        }
+    }
+/*  */
+
+/* Social */
+    .social .container{
+        width: 50%;
+        min-width: 240px;
+    }
+
+    .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 70px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+    
+    .fa-twitter {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+
+    .fa-instagram {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+
+
+    @media (max-width: 1024px) {
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 50px;
+        }
+    }
+/*  */
+
+/* Animaciones */
+
+    button {
+        visibility: hidden;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+    }
+    img {
+        visibility: hidden;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+    }
+/*  */

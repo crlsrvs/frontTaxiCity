@@ -1,0 +1,27 @@
+#Carousel{
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  height: 300px;
+} 
+
+#Carousel .item{
+  margin: 0 50px;
+}   
+
+.carousel-inner{
+    top: 50px;    
+}
+
+@media (max-width: 332px) {
+    
+    #Carousel{
+        height: auto;
+    } 
+
+    .carousel-inner{
+        padding-bottom: 20px;
+        
+    }
+
+}

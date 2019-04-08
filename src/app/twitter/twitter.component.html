@@ -1,0 +1,31 @@
+<div id="twitter">
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+
+                <div class="title wow fadeIn">
+                    <h2>Experiencias</h2>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+            
+                <div class="contenido  wow fadeIn">
+                    <ngx-carousel
+                        [inputs]="carouselOne"
+                        (carouselLoad)="myfunc($event)">
+                
+                        <ngx-item NgxCarouselItem *ngFor="let item of items"> 
+                            <p>{{item.comment}}</p>
+                            <span>{{item.user}}</span>
+                        </ngx-item>
+                        
+                
+                        <button NgxCarouselPrev >&lt;</button>
+                        <button NgxCarouselNext >&gt;</button>
+                    </ngx-carousel>
+                </div>
+        </div>
+    </div>
+</div>
+
+</div>

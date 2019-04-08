@@ -1,0 +1,83 @@
+<div id="gray">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 ">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        
+                        <div class="row ">
+
+                            <div class="col-xs-7">
+
+                                <div class="back">
+                                    <a [routerLink]="['']"><img src="../../assets/img/logo.png" alt=""></a>
+                                </div>
+
+                                <div class="title">
+                                    <img src="../../assets/img/tcnoticia.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-5">
+                                <div class="social">
+                                    <a href="#"><img src="../../assets/img/instagram.png" alt=""></a>
+                                    <a href="#"><img src="../../assets/img/twitter.png" alt=""></a>
+                                    <a href="#"><img src="../../assets/img/facebook.png" alt=""></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="row padding-news">
+            
+            <div class="col-xs-12 col-sm-12 col-md-8 ">
+                <h1>{{x.title}}</h1>
+                
+
+                <img [src]="DomSanitizer.bypassSecurityTrustUrl(y)" class="img-responsive">
+                <p>{{x.p1}}</p> <br>
+                <p *ngIf="x.p2" >{{x.p2}}</p> <br>
+                <p *ngIf="x.p3" >{{x.p3}}</p> <br>
+                <p *ngIf="x.p4" >{{x.p4}}</p> <br>
+                <p *ngIf="x.p5" >{{x.p5}}</p> <br>
+                <p *ngIf="x.p6" >{{x.p6}}</p> <br>
+                <p *ngIf="x.p7" >{{x.p7}}</p> <br>
+                <p *ngIf="x.p8" >{{x.p8}}</p> <br>
+                <p *ngIf="x.p9" >{{x.p9}}</p> <br>
+
+                <a *ngIf="x.a" href="{{x.a}}">http://impresa.elmercurio.com/Pages/NewsDetail.aspx?dt=25-11-2017%200:00:00&dtB=25-11-2017%200:00:00&BodyID=7&PaginaId=7</a>
+                <hr>
+            </div>
+
+            <div class="col-xs-12   col-sm-offset-2 col-sm-8 col-sm-offset-2   col-md-offset-1 col-md-3 more">
+                <h3>Mas noticias</h3>
+
+                <div *ngFor="let item of items, let i = index" class="articulos">
+                    
+                    <div *ngIf=" i != id" >
+                        <a  [routerLink]="['/showNews', i]"  [target]="'_blank'" >
+                            <h4>{{item.title}}</h4>
+                            <img [src]="DomSanitizer.bypassSecurityTrustUrl(imageArray[i])" class="img-responsive">
+                        </a>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+

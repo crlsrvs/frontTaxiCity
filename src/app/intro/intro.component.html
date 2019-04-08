@@ -1,0 +1,46 @@
+<div id="block-6">
+    <div class="container">
+        <div class="row">
+            
+            <table class="table wow fadeInUp">
+                <tr>
+                    <td class="izq">
+                        <h2>Mantener el contacto con nuestros clientes es importante para nosotros</h2>
+                        <p>Para esto podrás escribirnos a través del formulario de contacto al cual puedes acceder al hacer click en el botón "Escribenos". Allí podrás enviar todas tus dudas e inquietudes, las cuales trataremos de responder en el menor tiempo posible.</p>
+                    </td>
+
+                    <td class="der">
+                        <h3>¿Preguntas o inquietudes?</h3>
+                        <h2>Contacte inmediatamente con nosotros</h2>
+
+                        <button (click)="contactenos()" >ESCRIBENOS</button>
+                        <div *ngIf="show">
+                            <form  #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>  
+                                <div class="form-group">
+                                    <label>Ingrese su email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="ejemplo@mail.com" 
+                                    name="email" ngModel required #email="ngModel"  >
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Ingrese su consulta:</label>
+                                    <textarea class="form-control" rows="5" id="comment" placeholder="Introduzca su mensaje"
+                                    name="message" ngModel required #message="ngModel"  ></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-default" >Enviar</button>
+                            </form>
+                        </div>
+
+                        <div *ngIf="confirm">
+                            <h3>Nos comunicaremos con usted a la brevedad, gracias por escribirnos.</h3>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+</div>
+    

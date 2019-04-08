@@ -1,0 +1,117 @@
+#block-2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#block-2 .texto {
+    text-align: center;
+}
+#block-2 .texto h2 {
+    font-size: 55px;
+}
+#block-2 .texto p {
+    color: grey;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+#block-2 .icons {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#block-2 .icons p {
+    color: grey;
+    padding-top: 20px;
+    font-size: 20px;
+}
+#block-2 .icons ul{
+    display: -webkit-inline-box;
+}
+#block-2 .icons i {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 50px;
+}
+#block-2 .icons a{
+    color: lightgrey;
+}
+#block-2 .icons .active a{
+    background-color: white !important; 
+    color: gold !important;
+}
+
+@media (min-width: 770px) {
+    #block-2 img{
+        height: 500px;
+        float: right;
+    }
+}
+
+@media (max-width: 991px) {
+    #block-2 .icons i {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    #block-2 .icons i {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 459px) {
+    #block-2 .texto h2 {
+        font-size: 35px;
+    }
+    #block-2 .texto p {
+        font-size: 15px;
+    }
+
+
+    #block-2 .icons i {
+        font-size: 30px;
+    }
+    #block-2 .icons p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 371px) {
+
+    #block-2 .icons ul{
+        display: block;
+    }
+
+    #block-2 .icons ul li{
+        width: 49%;
+    }
+
+    #block-2 .icons i {
+        font-size: 45px;
+    }
+
+}
+
+#block-2:target{
+    transition:all 1s ease;
+}
+
+#cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* Animaciones */
+
+.texto {
+    visibility: hidden;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.imagen {
+    visibility: hidden;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+}

@@ -1,0 +1,122 @@
+h2{
+    color: white;
+    padding: 1%;
+    font-weight: bold;
+
+}
+
+h1{
+    font-weight: bold;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+img{
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+p{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+h3{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+h4{
+    padding-bottom: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.articulos{
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.articulos a{
+    text-decoration: none;
+    color: black
+}
+
+.more{
+    border: 3px solid lightgray;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.padding-news{
+    margin-top: 70px;
+}
+
+@media (max-width: 500px) {
+    p{
+        font-size: 15px;
+    }
+}
+
+/* ******************************************************************* */
+
+.back{
+    width: 21%;
+    float: left;
+    background: black;
+}
+.title{
+    width: 21%;
+    float: right;
+}
+.social{
+
+}
+.back img{
+    margin-bottom: 0;
+}
+.title img{
+    margin-bottom: 0;
+}
+.social img{
+    width: 7%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    float: right;
+}
+
+
+.container-fluid{
+    background-color: gold;
+}
+
+
+/* hasta width 483 */
+@media (max-width: 767px) {
+    .title{
+        width: 30%;
+    }
+
+    .back{
+        width: 26%;
+    }
+    .social img{
+        width: 9%;
+    }
+}
+
+@media (max-width: 475px) {
+    
+    .social img{
+        margin-top: 2%;
+    }
+}
+
